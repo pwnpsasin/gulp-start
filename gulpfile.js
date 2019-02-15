@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-
+var chwatch = require('gulp-chokidar')(gulp);
 
 gulp.task('sass', function() {
   return gulp.src('scss/main.scss')
@@ -19,6 +19,14 @@ gulp.task('watch', function(){
   gulp.watch('scss/**/*.scss', gulp.series('sass'));
   //gulp.watch('scss/**/*.scss', ['sass']);
 });
+
+
+
+
+gulp.task('chwatch', function(){
+  chwatch('scss/**/*.scss', gulp.series('sass'));
+});
+
 
 
 gulp.task('proba', function(done) {

@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-chokidar": "0.0.5",
     "gulp-cli": "^2.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4"
