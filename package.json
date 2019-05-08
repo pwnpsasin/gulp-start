@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+  "tar": ">=4.4.2"
+},
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-chokidar": "0.0.5",
